@@ -53,7 +53,7 @@ def gestionare_date_client(client_socket):
     utilizare_memorie = proces.memory_percent()
 
     print(f"Timp total de procesare: {total_time * 1000:.2f} ms")
-    print(f"Utilizare CPU: {utilizare_cpu:.50f}%")
+    print(f"Utilizare CPU: {utilizare_cpu:.2f}%")
     print(f"Utilizare memorie: {utilizare_memorie}%")
 
 
