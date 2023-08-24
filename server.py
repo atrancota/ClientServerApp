@@ -38,12 +38,11 @@ def gestionare_date_client(client_socket):
     date_client = client_socket.recv(4096).decode()
     client_socket.send("OK".encode())
     lista_fisiere = json.loads(date_client)
-    lista_finala_json = []
+
     for element in lista_fisiere:
         json_info = procesare_fisier(path_fisier=element)
-        lista_finala_json.append(json_info)
-    for json_dict in lista_finala_json:
-        print(json.dumps(json_dict, indent=4))
+        print(json.dumps(json_info, indent=4))
+
     client_socket.close()
 
     end_time = time.time()
