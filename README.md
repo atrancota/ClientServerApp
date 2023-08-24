@@ -20,4 +20,8 @@ Repo-ul conține două scripturi - `server.py` și `client.py` - care permit tra
 5. Deschide un al doilea terminal și navigheaza la directorul în care se află scriptul `client.py`.
 6. Modifica variabila `iterare_path` în codul `client.py` pentru a specifica directorul de unde se itereaza fișierele.
 7. Executa comanda: `python client.py`.
-8. Output-ul din terminalul serverului va contine informatiile descrise mai sus, apoi se inchide sesiunea cu clientul. 
+8. Output-ul din terminalul serverului va contine informatiile descrise mai sus, apoi se inchide sesiunea cu clientul.
+
+### Observatii
+
+In output-ul final sa mai adauga si cateva informatii legate de performanta, cum ar fi usage-ul CPU, memorie si timpul de executie in gestionarea datelor venite de la client. Pe langa asta, toate celelalte informatii din output se mai pot customiza, de exemplu Size fisier este reprezentat in KB, etc.
