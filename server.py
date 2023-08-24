@@ -17,16 +17,16 @@ print(f"Serverul asculta pe {HOST}:{PORT}")
 def procesare_fisier(path_fisier):
 
     detalii_fisier = dict()
-    detalii_fisier['Nume fisier'] = os.path.basename(path_fisier)
+    detalii_fisier['Nume_fisier'] = os.path.basename(path_fisier)
     dimensiune_kb = os.path.getsize(path_fisier) / 1024
-    detalii_fisier['Size fisier'] = str(dimensiune_kb) + " KB"
-    detalii_fisier['Data ultimei modificari'] = time.ctime(os.path.getmtime(path_fisier))
-    detalii_fisier['Data crearii'] = time.ctime(os.path.getctime(path_fisier))
+    detalii_fisier['Size_fisier'] = str(dimensiune_kb) + " KB"
+    detalii_fisier['Data_ultimei_modificari'] = time.ctime(os.path.getmtime(path_fisier))
+    detalii_fisier['Data_crearii'] = time.ctime(os.path.getctime(path_fisier))
 
     with open(path_fisier, 'rb') as f:
         content = f.read()
         md5_hash = hashlib.md5(content).hexdigest()
-        detalii_fisier['Hash MD5'] = md5_hash
+        detalii_fisier['Hash_MD5'] = md5_hash
 
     return detalii_fisier
 

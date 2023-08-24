@@ -24,5 +24,5 @@ def itereaza_si_trimite_path_fisiere(path):
 
 
 if __name__ == "__main__":
-    iterare_path = "C:/Users/andre/Desktop/test/"  # ex: "C:/Users/at/Desktop/test/"
+    iterare_path = ""  # ex: "C:/Users/at/Desktop/test/"
     itereaza_si_trimite_path_fisiere(iterare_path)
