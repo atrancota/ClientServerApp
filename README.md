@@ -24,4 +24,4 @@ Repo-ul conține două scripturi - `server.py` și `client.py` - care permit tra
 
 ### Observatii
 
-In output-ul final sa mai adauag si cateva informatii legate de performanta, cum ar fi usage-ul CPU, memorie si timpul de executie in gestionarea datelor venite de la client. Pe langa asta, toate celelalte informatii din output se mai pot customiza, de exemplu Size fisier este reprezentat in KB, etc.
+In output-ul final sa mai adauga si cateva informatii legate de performanta, cum ar fi usage-ul CPU, memorie si timpul de executie in gestionarea datelor venite de la client. Pe langa asta, toate celelalte informatii din output se mai pot customiza, de exemplu Size fisier este reprezentat in KB, etc.
